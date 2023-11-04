@@ -1,0 +1,102 @@
+html{
+  height: 100%
+}
+
+body{
+  font-family: 'Young Serif', serif;
+  background: linear-gradient(341deg, rgba(255, 253, 184, 0.768) 0%, rgba(241, 206, 93, 0.776) 35%, rgba(255, 196, 0, 0.768) 100%);
+}
+
+.nav-bar{
+  position: sticky;
+  justify-content: center;
+  display: flex;
+  
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.nav-bar ul li {
+  float: left;
+}
+
+.nav-bar ul li a {
+  display: block;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  color:rgba(1, 89, 77, 0.833);
+  font-size:15px ;
+}
+
+.nav-bar a.active {
+  background-color: rgba(247, 250, 249, 0.463);
+  border-radius: 30px;
+}
+
+.star-image img{
+  width: 120px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  transform: rotate(30deg);
+}
+
+.star-image1 img{
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: absolute;
+  top: 90px;
+  left: 1100px;
+  transform: rotate(170deg);
+}
+
+.my-name{
+  position: relative;
+  font-size: 60px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.my-name p{
+  text-align: center;
+  color: rgb(1, 89, 77);
+  padding: 0;
+  margin: 0;
+  text-shadow: 2px 2px 2px rgb(242, 242, 242);
+}
+
+.back-img{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 99%;
+  height: 200px;
+  background: linear-gradient(341deg, rgba(255, 136, 0, 0.768) 0%, rgba(216, 241, 93, 0.776) 35%, rgba(255, 165, 171, 0.768) 100%);
+  opacity: 0.3;
+  animation: bgcolor 60s infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes bgcolor {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
