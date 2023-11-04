@@ -4,14 +4,16 @@ html{
 
 body{
   font-family: 'Young Serif', serif;
-  background: linear-gradient(341deg, rgba(255, 253, 184, 0.768) 0%, rgba(241, 206, 93, 0.776) 35%, rgba(255, 196, 0, 0.768) 100%);
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  ;
 }
 
 .nav-bar{
+  z-index: 1;
   position: sticky;
   justify-content: center;
   display: flex;
-  
 }
 
 .nav-bar ul {
@@ -41,8 +43,7 @@ body{
 }
 
 .star-image img{
-  width: 120px;
-  height: 120px;
+  width: 10%;
   margin: 0;
   padding: 0;
   color: white;
@@ -50,11 +51,11 @@ body{
   top: 40px;
   left: 200px;
   transform: rotate(30deg);
+  z-index: -1;
 }
 
 .star-image1 img{
-  width: 80px;
-  height: 80px;
+  width: 10%;
   margin: 0;
   padding: 0;
   color: white;
@@ -62,6 +63,7 @@ body{
   top: 90px;
   left: 1100px;
   transform: rotate(170deg);
+  z-index: -1;
 }
 
 .my-name{
@@ -80,12 +82,18 @@ body{
 }
 
 .back-img{
+  display: block;
+  justify-content: center;
+  text-align: center;
   padding: 0;
   margin: 0;
+  left: 140px;
+  top: 120px;
   position: absolute;
-  width: 99%;
-  height: 200px;
-  background: linear-gradient(341deg, rgba(255, 136, 0, 0.768) 0%, rgba(216, 241, 93, 0.776) 35%, rgba(255, 165, 171, 0.768) 100%);
+  width: 80%;
+  height: 150px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
   opacity: 0.3;
   animation: bgcolor 60s infinite;
   animation-direction: normal;
