@@ -6,6 +6,7 @@ let square3 = document.getElementById("square3");
 let square4 = document.getElementById("square4");
 let score = document.getElementById("score");
 let mainSq = document.getElementById("wrapper");
+let restart_b = document.getElementById("restart-button");
 let realScore = document.getElementById("real-score");
 
 let count = [];
@@ -24,11 +25,12 @@ function showPath() {
   next();
   userSquares = [];
   realScore.innerHTML = "Level: " + (count.length - 1);
+
   function next() {
     if (i < count.length) {
       changeCol(count[i]);
       i += 1;
-      setTimeout(next, 2000);
+      setTimeout(next, 1000);
     }
   }
 }
@@ -37,7 +39,7 @@ function changeCol(element) {
   element.style.opacity = 0.6;
   setTimeout(() => {
     element.style.opacity = 1;
-  }, 1000);
+  }, 500);
 }
 
 function getRandomSquare() {
@@ -50,7 +52,7 @@ function userClick(squareNum) {
   userSquares.push(squareNum);
   if (checkArray()) {
     count.push(getRandomSquare());
-    setTimeout(showPath, 3000);
+    setTimeout(showPath, 2000);
   } else if (checkArray() == false && userSquares.length == count.length) {
     mainSq.style.display = "none";
     score.innerHTML = "Your Score: " + (userSquares.length - 1);
@@ -58,6 +60,7 @@ function userClick(squareNum) {
     container.style.backgroundColor = "#6728a3";
     container.style.width = "500px";
     container.style.height = "500px";
+    restart_b.style.display = "inline-block";
   }
 }
 
@@ -76,4 +79,14 @@ function checkArray() {
     }
     return result;
   }
+}
+
+function restart() {
+  count = [];
+  userSquares = [];
+  restart_b.style.display = "none";
+  container.style.display = "none";
+  mainSq.style.display = "";
+  count.push(getRandomSquare());
+  setTimeout(showPath, 1000);
 }
