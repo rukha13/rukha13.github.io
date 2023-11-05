@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my web page</title>
+    <title>My Portfolio</title>
   </head>
   <body>
-    
     <header>
       <div class="nav-bar">
         <ul>
@@ -28,12 +27,67 @@
         <p>Hi. My Name is Farrukh</p>
         <p>I study at Inha University</p>
       </div>
+      <div class="decs">
+        <p>
+          I'm freshman of Inha University in Tashkent.<br />
+          I started to learn coding in 2023 and I enjoy doing it.
+        </p>
+      </div>
       <div class="star-image"><img src="star-icon3.png" alt="star" /></div>
       <div class="star-image1"><img src="star-icon3.png" alt="star" /></div>
     </header>
 
     <main>
-      
+      <div class="container">
+        <div class="wrapper">
+          <div class="movies">
+            <p class="fav-mov">Favourite Movies</p>
+            <div class="sherlock"><img src="sherlock2.jpg" alt="" /></div>
+            <div class="suits"><img src="suits3.jpg" alt="" /></div>
+            <div class="pirates"><img src="pirates1.jpg" alt="" /></div>
+            <div class="inter"><img src="interstellar.jpg" alt="" /></div>
+          </div>
+          <div class="cirriculum">
+            <ul>
+              <p class="my-cir">My Cirriculum</p>
+              <li>Introduction to IT</li>
+              <li>Calculus</li>
+              <li>Physics</li>
+              <li>Physics Experiments</li>
+              <li>Academic English</li>
+              <li>Academic English Reading</li>
+              <li>Object Oriented Programing</li>
+            </ul>
+          </div>
+          <div class="neigh">
+            <p class="my-neigh">My Neighbours</p>
+            <div class="pulat">
+              <p>Nigmanhodjayev Turgunpulat</p>
+              <a href="https://turgunpulatn.github.io/"
+                ><img src="pulat.jpg" alt=""
+              /></a>
+            </div>
+            <div class="gulbara">
+              <p>Begmatova Gulbara</p>
+              <a href="https://gulbara1607.github.io/gulbara1607/"
+                ><img src="gulbara.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="mood">
+            <p class="my-mood">My Mood</p>
+            <button class="change-mood" id="my-button" onclick="changeMood()">
+              Happy
+            </button>
+            <div class="happy">
+              <img src="happy2.jpg" alt="" id="img_happy" />
+            </div>
+            <div class="sad" id="img_sad"><img src="sad1.JPG" alt=""/></div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>
